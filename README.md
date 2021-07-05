@@ -1,0 +1,1 @@
+In making of this Blog_App in backend part , I have made use of MongoDB Atlas for storing data, Mongoose for building Schema , JWT for authentication. Here, i have passed different endpoints of user signup, login, posts , etc. Here we can write post and edit as per the ID. 
