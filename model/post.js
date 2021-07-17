@@ -1,13 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-var catSchema = new Schema({
-    categories:  {
-        type: String,
-        required: true
-    }
-});
-
 var postSchema = new Schema({
     title:{
         type:String,
@@ -21,8 +14,7 @@ var postSchema = new Schema({
         type:String,
         required:true
     },
-    categories:[catSchema]
-},{timestamps:true});
+{timestamps:true});
 
 var posts = mongoose.model('post',postSchema)
 module.exports= posts;
